@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lee's Fix It | Karns, TN</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * { box-sizing: border-box; }
+    body { margin: 0; font-family: 'Roboto', sans-serif; background: #f9f9f9; color: #333; }
+    header { background: url('https://images.unsplash.com/photo-1570129477492-45c003edd2be') center/cover no-repeat; color: #fff; text-align: center; padding: 5rem 2rem; }
+    header h1 { font-size: 3rem; margin: 0; }
+    header p { font-size: 1.2rem; }
+    nav { background: #222; text-align: center; padding: 1rem; }
+    nav a { color: #fff; margin: 0 1rem; text-decoration: none; font-weight: bold; }
+    .section { padding: 3rem 1rem; max-width: 960px; margin: auto; background: #fff; margin-top: 2rem; border-radius: 12px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+    h2 { color: #333; }
+    ul { padding-left: 1.2rem; }
+    .services img, .price-guide img { width: 100%; max-width: 100%; border-radius: 8px; margin-bottom: 1rem; }
+    form input, form textarea, form select, form button { width: 100%; padding: 0.75rem; margin-top: 0.5rem; border-radius: 6px; border: 1px solid #ccc; }
+    form button { background: #333; color: white; border: none; cursor: pointer; margin-top: 1rem; }
+    footer { text-align: center; padding: 2rem 1rem; background: #222; color: white; margin-top: 3rem; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Lee's Fix It</h1>
+    <p>Expert repairs for cars, trucks, small engines, and heavy equipment in Karns, TN</p>
+  </header>
+
+  <nav>
+    <a href="#services">Services</a>
+    <a href="#prices">Prices</a>
+    <a href="#faq">FAQ</a>
+    <a href="#booking">Book</a>
+  </nav>
+
+  <div class="section services" id="services">
+    <h2>Our Services</h2>
+    <img src="https://images.unsplash.com/photo-1616246338696-91743f6a27e7" alt="Car Repair">
+    <ul>
+      <li>Car Repairs</li>
+      <li>Truck Diagnostics & Maintenance</li>
+      <li>Small Engine Repairs (Lawnmowers, Chainsaws)</li>
+      <li>Heavy Machinery Service</li>
+    </ul>
+  </div>
+
+  <div class="section price-guide" id="prices">
+    <h2>Price Guide (Estimates)</h2>
+    <img src="https://images.unsplash.com/photo-1601050690591-3c0ec3c8f7ac" alt="Heavy Equipment">
+    <ul>
+      <li>Oil Change – $40</li>
+      <li>Brake Service – $120+</li>
+      <li>Engine Diagnostic – $60</li>
+      <li>Small Engine Tune-Up – $75</li>
+      <li>Heavy Equipment Maintenance – $250+</li>
+    </ul>
+  </div>
+
+  <div class="section faq" id="faq">
+    <h2>FAQ</h2>
+    <p><strong>Do you accept walk-ins?</strong><br>We recommend scheduling in advance, but we try to accommodate walk-ins if possible.</p>
+    <p><strong>Do you offer warranties?</strong><br>Yes, most services come with a 30-day satisfaction guarantee.</p>
+    <p><strong>Do you repair riding mowers?</strong><br>Yes! We handle all small engine equipment.</p>
+  </div>
+
+  <div class="section booking" id="booking">
+    <h2>Book an Appointment</h2>
+    <form action="https://formspree.io/f/yourformid" method="POST">
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" required>
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" required>
+      <label for="service">Service Type</label>
+      <select id="service" name="service">
+        <option>Car Repair</option>
+        <option>Truck Maintenance</option>
+        <option>Small Engine Repair</option>
+        <option>Heavy Machinery Service</option>
+      </select>
+      <label for="details">Additional Info</label>
+      <textarea id="details" name="details" rows="4"></textarea>
+      <button type="submit">Book Now</button>
+    </form>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Lee's Fix It | Built with ❤️ and wrench grease</p>
+  </footer>
+
+  <!-- AI Chatbot Integration Example (Tidio or Landbot embed) -->
+  <script>
+    (function() {
+      var chatbot = document.createElement('script');
+      chatbot.src = 'https://cdn.landbot.io/landbot-3/landbot-3.0.0.js';
+      chatbot.async = true;
+      chatbot.onload = function() {
+        var myLandbot = new Landbot.Livechat({
+          configUrl: 'https://storage.googleapis.com/landbot.online/v3/H-XXXXXXX-XXXXXXX/index.json',
+        });
+      };
+      document.body.appendChild(chatbot);
+    })();
+  </script>
+</body>
+</html>
